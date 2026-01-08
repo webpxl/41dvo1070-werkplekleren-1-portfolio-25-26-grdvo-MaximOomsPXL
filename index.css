@@ -1,17 +1,26 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
-
 * {
-    box-sizing: border-box;
-    font-family: 'Roboto', sans-serif;body {
-    background: #2ea3f2;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
+    padding: 0;
     margin: 0;
-    font-family: sans-serif;
+    box-sizing: border-box;
 }
 
+.card {
+    background: #85d5ff;
+    border-radius: 40px;
+    padding: 25px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+    margin: 20px;
+}
+
+.section-title {
+    font-weight: bold;
+    font-style: italic;
+    font-size: 22px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.section-title.left { text-align: left; }
 
 
 .profile-section {
@@ -19,22 +28,68 @@
     display: flex;
     align-items: center;
     gap: 30px;
+    flex-wrap: wrap;
+    align-content: center;
+    flex-direction: row;
+    justify-content: flex-start;
 }
 
+
 .profile-img {
-    width: 250px;
-    height: 250px;
+    width: 220px;
+    height: 220px;
     border-radius: 50%;
     object-fit: cover;
 }
 
-.rectangle {
-    background-color: white;
-    border-radius: 150px;
-    padding: 200px;
-    text-align: center;
-    width: fit-content;
-    margin: 20px auto;
-    font-weight: bold;
-}}
+.sidebar {
+    background: #63aedd;
+    color: white;
+}
 
+.trait-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+    font-size: 14px;
+}
+
+.toggle {
+    width: 45px;
+    height: 22px;
+    background: #e0e0e0;
+    border-radius: 20px;
+    position: relative;
+    cursor: pointer;
+}
+
+.toggle::after {
+    content: '';
+    position: absolute;
+    width: 18px;
+    height: 18px;
+    background: white;
+    border-radius: 50%;
+    top: 2px;
+    left: 2px;
+    transition: 0.3s;
+}
+
+.toggle.active { background: #0076c0; }
+.toggle.active::after { left: 25px; }
+
+
+.lang-row { display: flex; justify-content: space-between; margin-bottom: 12px; }
+
+.dots span {
+    display: inline-block;
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    background: #d1e9ff;
+    margin-left: 4px;
+}
+
+.dots span.filled { background: #005a9c; }
+.dots span.half { background: linear-gradient(90deg, #005a9c 50%, #d1e9ff 50%); }
