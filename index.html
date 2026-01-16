@@ -1,72 +1,115 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="nl">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-
-    <!-- Bootstrap CSS (CDN) -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maxim Ooms | Portfolio</title>
     <link rel="stylesheet" href="index.css">
 </head>
 <body>
 
-<div class="card profile-section">
-    <img src="profiel-foto.jpg" alt="Maxim Ooms" class="profile-img">
-    <div class="info">
-        <h1>Maxim Ooms</h1>
-        <p>10/07/2007</p>
-        <br>
-        <p>maxim.ooms1007@gmail.com</p>
-        <p>0467 01 56 21</p>
-        <p>Olmenlaan 41, Lichtaart, België</p>
-    </div>
-</div>
+<header>
+    <nav class="container nav-flex">
+        <a href="index.html" class="brand">MAXIM<span>.</span>OOMS</a>
+        <div class="menu">
+            <a href="#about">Over Mij</a>
+            <a href="#projects">Projecten</a>
+            <a href="portfolio/portfolio.html">Portfolio</a>
+        </div>
+    </nav>
+</header>
 
-<div class="card sidebar">
-    <div class="section-title left">EIGENSCHAPPEN</div>
-    <div class="trait-row">
-        <span>Behulpzaam, eerlijk, betrouwbaar</span>
-        <div class="toggle active"></div>
-    </div>
-    <div class="trait-row">
-        <span>Creatief, innovatief, flexibel</span>
-        <div class="toggle active"></div>
-    </div>
-    <div class="trait-row">
-        <span>Kalm, geduldig</span>
-        <div class="toggle active"></div>
-    </div>
-    <div class="trait-row">
-        <span>Gedreven, leergierig, nauwkeurig</span>
-        <div class="toggle active"></div>
-    </div>
-    <div class="trait-row">
-        <span>Praat veel, komt vaak te laat</span>
-        <div class="toggle"></div>
-    </div>
-</div>
+<main>
+    <section class="hero-blue">
+        <div class="container hero-grid">
+            <div class="hero-content">
+                <h1>Visual Designer & Tech Explorer</h1>
+                <p class="intro-text">Ik combineer creatief ontwerp met technische code voor digitale oplossingen.</p>
+                <a href="#projects" class="btn-main">Bekijk mijn werk</a>
+            </div>
+            <div class="hero-visual">
+                <img src="assets/profiel-foto.jpg" alt="Maxim Ooms" class="profile-pic">
+            </div>
+        </div>
+    </section>
 
-<div class="card talen-card">
-    <div class="section-title">TALEN</div>
-    <div class="lang-row">
-        <b>NL</b>
-        <div class="dots"><span class="filled"></span><span class="filled"></span><span class="filled"></span><span class="filled"></span><span class="filled"></span></div>
+    <section id="about" class="section-container">
+        <div class="container">
+            <div class="about-grid">
+                <div class="about-text">
+                    <h2 class="sub-title">Wie ben ik?</h2>
+                    <p>Ik ben Maxim Ooms. Ik ontwerp logo's, maak video's en schrijf code. Ik werk graag resultaatgericht en help anderen waar nodig om samen een project succesvol af te ronden.</p>
+                    <p>Mijn aanpak is praktisch: ik leer het snelst door direct met nieuwe software aan de slag te gaan. Zo ontdek ik snel wat werkt en hoe ik het beste resultaat behaal.</p>
+                </div>
+                <div class="about-extra">
+                    <h2 class="sub-title">Waarom deze opleiding?</h2>
+                    <p>Ik wil het volledige creatieve proces begrijpen. Niet alleen een mooi beeld maken, maar ook de techniek en code erachter beheersen is mijn doel.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects" class="section-container light-blue-bg">
+        <div class="container">
+            <h2 class="section-title">Projecten</h2>
+            <div class="card-stack">
+                <article class="project-item">
+                    <div class="project-info">
+                        <span class="tag">Samenwerking</span>
+                        <h3>UEFN Maps</h3>
+                        <p>Voor onze eigen Fortnite-maps ontwerp ik alle visuals, zoals logo's en thumbnails. Dit project combineert creativiteit met een commerciële aanpak.</p>
+                    </div>
+                    <div class="project-gallery">
+                        <img src="assets/SigmaWars_Thumbnail.png" alt="Thumbnail UEFN">
+                        <img src="assets/SupplyWars_Thumbnail.png" alt="Thumbnail UEFN">
+                    </div>
+                </article>
+
+                <article class="project-item">
+                    <div class="project-info">
+                        <span class="tag">Freelance</span>
+                        <h3>Logo Design</h3>
+                        <p>Ik vertaal de wensen van klanten naar professionele logo's en illustraties. Hierbij leer ik hoe ik een concept digitaal strak kan uitwerken.</p>
+                    </div>
+                    <div class="project-gallery">
+                        <img src="assets/Reuzen_spandoek.png" alt="Design">
+                        <img src="assets/Tekening-pen.jpg" alt="Tekening pen">
+                    </div>
+                </article>
+
+                <article class="project-item">
+                    <div class="project-info">
+                        <span class="tag">Stage</span>
+                        <h3>Werkervaring</h3>
+                        <p>Ervaring opgedaan bij Herva, AirDeco en AdWorks. Bij AdWorks heb ik een maand lang dingen gemaakt.<br>Hier zie je een parfumflesje getekend met Illustrator en een boek dat ik ook in illustrator heb gemaakt</p>
+                        <a href="https://www.albelli.be/onlinefotoboek-bekijken?widgetId=2d3f16bd-5ec7-4cfd-8824-154f9a81931b&securityId=4bae8263-c643-421f-8028-318b2afcd4db">Volledig Boek</a>
+                    </div>
+                    <div class="project-gallery">
+                        <img src="assets/Sauvage-illustrator.jpg" alt="Stage werk">
+                        <img src="assets/Maxim_In_Zuid-Amerika.png" alt="Stage werk">
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <section id="extra" class="speciaal-container">
+        <div class="container">
+            <div class="speciaal-accent-box">
+                <span class="speciaal-label">Methode</span>
+                <h2>Directe Aanpak</h2>
+                <p>In plaats van veel theorie, kies ik voor actie. Door direct programma's zoals Figma of Da Vinci Resolve te gebruiken, leer ik de functies sneller kennen en kan ik direct creatieve oplossingen bedenken.</p>
+            </div>
+        </div>
+    </section>
+</main>
+
+<footer>
+    <div class="container foot-flex">
+        <p>&copy; 2026 Maxim Ooms</p>
+        <a href="privacy.txt" target="_blank" class="privacy-link">Privacyverklaring</a>
     </div>
-    <div class="lang-row">
-        <b>EN</b>
-        <div class="dots"><span class="filled"></span><span class="filled"></span><span class="filled"></span><span class="filled"></span><span class="half"></span></div>
-    </div>
-    <div class="lang-row">
-        <b>FR</b>
-        <div class="dots"><span class="filled"></span><span class="filled"></span><span class="half"></span><span></span><span></span></div>
-    </div>
-    <div class="lang-row">
-        <b>LA</b>
-        <div class="dots"><span class="filled"></span><span class="filled"></span><span class="half"></span><span></span><span></span></div>
-    </div>
-</div>
-</div>
+</footer>
 
 </body>
 </html>
